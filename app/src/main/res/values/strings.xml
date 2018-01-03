@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GifRecoder</string>
+    <string name="usage">使用说明：\n\n1、要录屏请点击“开始录屏”按钮\n2、要结束录屏请拉下通知栏，点击GifRecorder通知\n3、录制好的gif文件存放在手机内存根目录下的gif_recorder文件夹内\n\n注意：本应用最长只能录制90秒\n\n任何问题请反馈：微信724360018</string>
+</resources>
