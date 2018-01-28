@@ -31,6 +31,17 @@
 
 将mp4转换为gif则借助了ffmpeg来实现，本应用是将裁剪过的ffmpeg移植到android中来用，具体是如何裁剪和编译的将另行整理成文。此处只是导入了编译好的so文件，并写了一个本地接口来调用ffmpeg命令，接口文件为FFMpegJni.java，目标是编译出libffmpeg.so文件，编译所需要的资源大部分都在myjni文件夹内，编译好libffmpeg.so后myjni文件夹就不再需要了，只要将libffmpeg.so拷到jniLibs文件夹中即可。之所以没有在源码中删除这个文件夹是为了留个痕迹，也预防以后可能要重新编译libffmpeg.so文件。
 
+**功能实现详解:**
+
+1. [Android录屏并利用FFmpeg转换成gif（一） 录屏](http://blog.csdn.net/MingHuang2017/article/details/79050563)，讲讲怎样录屏生成mp4文件
+
+2. [Android录屏并利用FFmpeg转换成gif（二） 交叉编译FFmpeg源码](http://blog.csdn.net/MingHuang2017/article/details/79112682)，说说如何根据我们的需求裁剪FFmepg并编译出可在android下运行的so包
+
+3. [Android录屏并利用FFmpeg转换成gif（三） 在Android中使用ffmpeg命令](http://mp.blog.csdn.net/mdeditor/index/79186513)，说说如何在Android中使用ffmpeg命令，简化C代码的编写难度
+
+4. [Android录屏并利用FFmpeg转换成gif（四） 将mp4文件转换成gif文件](http://mp.blog.csdn.net/mdeditor/index/79186527)，将2、3两步生成的so文件集成到android工程中，实现将mp4文件转换成gif文件，完成最终的工程。
+
+
 **反馈:**
 
 任何意见或建议请联系：
